@@ -6,21 +6,32 @@
     <title>Document</title>
 </head>
 <body>
-<div id="tela-inicio" class="container">
-    <h1>Quiz The Agro!!!</h1>
-    <p>Pronto para testar seus conhecimentos?</p>
-    <button id="btn-play" class="botao-play">Play</button>
-</div>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Jogo de Perguntas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<div id="tela-jogo" class="oculto">
-    <h2>Pergunta 1:</h2>
-    <p>O que são agrotóxicos?</p>
-    </div>
-    <button class="botao-opcao">A) Produtos químicos ou biológicos usados para proteger plantações contra pragas e doenças.</button>
-    <button class="botao-opcao">B) Vitaminas artificiais injetadas no solo para acelerar o crescimento das plantas.</button>
-    <button class="botao-opcao">C) Apenas venenos líquidos usados para matar formigas e insetos domésticos.</button>
+  <!-- Tela inicial -->
+  <div id="start-screen" class="screen">
+    <button id="play-btn">Play</button>
+  </div>
 
-    <script src="script.js"></script>
+  <!-- Jogo / perguntas -->
+  <div id="game-screen" class="screen hidden">
+    <h1>Pergunta 1</h1>
+    <p>Qual é a capital do Brasil?</p>
+ <button onclick="responder(true)">Brasília</button>
+<button onclick="responder(false)">Rio de Janeiro</button>
+<button onclick="responder(false)">São Paulo</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+    
     
 </body>
 <script></script>
