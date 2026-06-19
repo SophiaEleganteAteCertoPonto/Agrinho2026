@@ -11,7 +11,7 @@ btnPlay.addEventListener('click', () => {
     // 1. Sua lista de perguntas, alternativas e a resposta correta
 const perguntas = [
     {
-        pergunta: "O que são agrotóxicos?",
+        pergunta: "O que são agrotóxicos?",]
         alternativas: [
             "Produtos químicos ou biológicos usados para proteger plantações contra pragas e doenças.",
             "Vitaminas artificiais injetadas no solo para acelerar o crescimento das plantas.",
