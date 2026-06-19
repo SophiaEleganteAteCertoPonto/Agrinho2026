@@ -7,11 +7,12 @@ const telaJogo = document.getElementById('tela-jogo');
 btnPlay.addEventListener('click', () => {
     telaInicio.classList.add('oculto'); // Esconde a tela de início
     telaJogo.classList.remove('oculto'); // Mostra a tela do jogo
+});
 
-    // 1. Sua lista de perguntas, alternativas e a resposta correta
+// 1. Sua lista de perguntas, alternativas e a resposta correta
 const perguntas = [
     {
-        pergunta: "O que são agrotóxicos?",]
+        pergunta: "O que são agrotóxicos?",
         alternativas: [
             "Produtos químicos ou biológicos usados para proteger plantações contra pragas e doenças.",
             "Vitaminas artificiais injetadas no solo para acelerar o crescimento das plantas.",
@@ -118,4 +119,3 @@ function reiniciarJogo() {
     pontuacao = 0;
     carregarPergunta();
 }
-});
